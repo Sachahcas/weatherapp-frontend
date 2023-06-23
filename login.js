@@ -4,7 +4,7 @@ document.querySelector("#register").addEventListener('click', function(){
     let email = document.querySelector("#registerEmail").value
     let name = document.querySelector('#registerName').value
 
-    fetch('http://localhost:3000/users/signup',{
+    fetch('https://weatherapp-backend-cyan.vercel.app/signup',{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ email, password, name })
@@ -22,7 +22,7 @@ document.querySelector("#connection").addEventListener('click', function(){
     let password = document.querySelector("#connectionPassword").value
     let email = document.querySelector("#connectionEmail").value
 
-    fetch('http://localhost:3000/users/signin',{
+    fetch('https://weatherapp-backend-cyan.vercel.app/signin',{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ email, password })
