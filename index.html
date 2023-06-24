@@ -2,28 +2,39 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
 </head>
 
 <body>
   <div id="header">
-    <a href="login.html" id="logoButton">
+    <a id="homeButton">
       <img id="logo" src="images/logo.svg" />
-    </a>
-
-    <div class="headerDiv">
-      <input id="cityNameInput" type="text" placeholder="Add new city" />
-      <button id="addCity"><img id="glass" src="images/glass.png" /></button>
-    </div>
-
-    <a href="index.html" id="userButton">
-      <img id="userIcon" src="images/user.png" />
     </a>
   </div>
 
-  <div id="cityList"></div>
+  <div id="container">
+    <div class="connexionCard">
+      <div>
+        <p>SIGN-UP</p>
+        <div class="divider"></div>
+      </div>
+      <input id="registerName" type="text" placeholder="Name" />
+      <input id="registerEmail" type="email" placeholder="E-mail" />
+      <input id="registerPassword" type="password" placeholder="Password" />
+      <button id="register">Register</button>
+    </div>
+    <div class="connexionCard">
+      <div>
+        <p>SIGN-IN</p>
+        <div class="divider"></div>
+      </div>
+      <input id="connectionEmail" type="email" placeholder="E-mail" />
+      <input id="connectionPassword" type="password" placeholder="Password" />
+      <button id="connection">Connect</button>
+    </div>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="login.js"></script>
 </body>
 
 </html>
