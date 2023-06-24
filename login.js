@@ -12,7 +12,7 @@ document.querySelector("#register").addEventListener('click', function(){
     .then(response => response.json())
     .then(data => {
         if (data.result){
-            window.location.assign('index.html')
+            window.location.assign('main.html')
         }
     })
 })
@@ -30,7 +30,7 @@ document.querySelector("#connection").addEventListener('click', function(){
     .then(response => response.json())
     .then(data => {
         if (data.result){
-            window.location.assign('index.html')
+            window.location.assign('main.html')
         }
     })
 })
